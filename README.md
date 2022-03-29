@@ -14,7 +14,7 @@ I would like to focus on more in the future by giving finer detail to my digrams
 
 ## Screenshot
 
-<img src="https://user-images.githubusercontent.com/93888295/160609653-69392c3f-9643-409d-978e-e58481a6c117.png" alt="Task List App" width="300" height="300" />
+<img src="https://user-images.githubusercontent.com/93888295/160610919-e5b6a327-0a44-4ef0-9004-e7590a51cb7f.svg" alt="Task List App" width="600" height="600" />
 
 ## Features
 
