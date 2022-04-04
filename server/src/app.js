@@ -13,7 +13,6 @@ app.use(helmet());
 
 app.use(
   cors({
-    //   we only want to accept requests from localhost on port 3000
     origin: '*',
   })
 );
