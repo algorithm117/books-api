@@ -1,7 +1,7 @@
 
 # Books REST API
 
-Contains over 10,000 book records with information about author(s), average rating, isbn information, language code, number of pages, and more.
+Contains over 10,000 book records from a [Kaggle CSV file](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks) with information about author(s), average rating, isbn information, language code, number of pages, and more.
 Users of this API can perform CRUD operations on the database.
 
 ## Motivation
