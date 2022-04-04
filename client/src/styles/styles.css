@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Mali', cursive;
+}
+
+.container {
+  max-width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fef1e6;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3.6rem;
+  color: #ff3d68;
+}
+
+.header p {
+  display: flex;
+}
+
+.github-link {
+  text-decoration: none;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.github-icon-container {
+  font-size: 4rem;
+}
+
+.github-link svg {
+  fill: #fc6565;
+}
+
+.github-anchor-tag:link,
+.github-anchor-tag:visited {
+  text-decoration: none;
+  color: #ff3d68;
+  border: 3px solid #fff;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.github-anchor-tag::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  transform: translate(-100%, 150%) rotate(45deg);
+  transition: all 0.4s;
+}
+
+.github-anchor-tag:hover {
+  background-color: #f1d4d4;
+}
+
+.github-anchor-tag:hover::before {
+  transform: translate(100%) rotate(45deg);
+}
+
+.background-highlight {
+  display: inline-block;
+  text-align: center;
+  background-color: #a773c3;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.type-highlight {
+  display: inline-block;
+  text-align: center;
+  background-color: #fe8f8f;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.request-url-path {
+  display: inline-block;
+  text-align: center;
+  background-color: #ffcb8e;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.example-url {
+  display: inline-block;
+  text-align: center;
+  background-color: #faad80;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.1rem 0.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  color: #ff5c58;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #c54c82;
+  position: relative;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  border-bottom: 2px solid #d291bc;
+}
+
+.h3-details {
+  position: relative;
+}
+
+.h3-details::after {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 17.5%;
+  height: 100%;
+  border-bottom: 2px solid #d291bc;
+}
+
+.request-api-key {
+  color: #64ccda;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  border: 4px dotted #dedef0;
+  width: 25%;
+  padding: 1rem 1rem;
+  letter-spacing: 0.2rem;
+}
+
+ul {
+  margin-left: 2rem;
+  list-style-type: circle;
+  font-size: 1.6rem;
+  color: #e6739f;
+}
+
+label {
+  font-size: 1.6rem;
+  color: #e6739f;
+}
+
+input[type='email'] {
+  padding: 0.2rem;
+  margin: 0 0 1rem 0;
+  background-color: none;
+  border: 0.1rem solid #e6739f;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 1.5rem 0.3rem
+    rgba(0, 0, 0, 0.06);
+}
+
+input[type='email']:focus {
+  outline: 1px solid #a773c3;
+}
+
+.btn-submit {
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #ff3d68;
+  background-color: #f1d4d4;
+  font-family: inherit;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-submit:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #ff9c71;
+}
+
+.btn-submit:active {
+  transform: scale(0.9);
+  color: #fff;
+  background-color: #fa7d09;
+}
+
+.request p {
+  font-size: 1.6rem;
+  color: #e6739f;
+  margin-bottom: 1.2rem;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #fec8d8;
+  margin-bottom: 1rem;
+}
+
+.get-all-table thead th:nth-child(1) {
+  width: 10%;
+}
+
+.get-all-table thead th:nth-child(2) {
+  width: 10%;
+}
+
+.get-all-table thead th:nth-child(3) {
+  width: 20%;
+}
+
+.post-table thead th:nth-child(1) {
+  width: 10%;
+}
+
+.post-table thead th:nth-child(2) {
+  width: 10%;
+}
+
+.post-table thead th:nth-child(3) {
+  width: 25%;
+}
+
+th,
+td {
+  padding: 1.5rem 1.3rem;
+}
+
+th {
+  letter-spacing: 2px;
+  color: #e6739f;
+  font-size: 1.6rem;
+}
+
+td {
+  letter-spacing: 1px;
+  color: #d63447;
+  font-size: 1.2rem;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffd5cd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5efef;
+}
